@@ -36,7 +36,7 @@ class App extends Component {
             currTime.getMinutes(),
             currTime.getSeconds()
         ];
-        const amOrpm = hours >= 12 ? "AM" : "PM";
+        const amOrpm = hours >= 12 ? "PM" : "AM";
         const twelveHrsFormat = hours > 12 ? hours - 12 : hours;
         const hourString = this.padToTwoDigits(twelveHrsFormat);
         const minuteString = this.padToTwoDigits(minutes);
